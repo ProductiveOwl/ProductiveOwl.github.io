@@ -39,44 +39,25 @@ a {
 }
 
 /*Header*/
-header {
+h1 {
   background-color: rgb(238, 141, 76);
   text-align: center;
-  display: box;
-  padding: 5px;
-  margin: auto;
-  width: 100%;
-}
-
-h1 {
-  text-align: center;
-  font-family: Helvetice, sans-serif;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: 35px;
+  padding: 10px;
 }
 
 /*Body*/
+.info {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
 body {
   background-color: lightblue;
-  margin: 0; /*Gets rid of a bit on the side*/
+  margin: 0;
 }
 
-article {
-  background-color: rgb(40, 166, 189);
-  margin: 15px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  border-style: dashed;
-  text-align: left;
-}
-
-img {
-  display: block;
-  margin: auto;
-  margin-bottom: 10px;
-  width: 75%;
-}
-
+/*Footer*/
 hr {
   height: 2px;
   color: black;
@@ -84,12 +65,7 @@ hr {
   border: none;
 }
 
-/*End*/
-footer {
-  display: block;
-}
-
 footer p {
   text-align: center;
-  font-size: 20px;
+  font-family: Helvetica, sans-serif;
 }
