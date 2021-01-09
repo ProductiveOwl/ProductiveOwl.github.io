@@ -1,27 +1,64 @@
+/*Navigation Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(36, 175, 99);
+}
+
+li {
+  display: inline;
+  border: 1px, solid, grey;
+  float: left;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+}
+
+li a:hover {
+  background-color: rgb(219, 34, 34);
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #31a314;
+}
+
+.active {
+  background-color: rgb(108, 64, 209);
+}
+
 /*Header*/
 header {
-  background-color: rgb(255, 145, 0);
+  background-color: rgb(238, 141, 76);
   text-align: center;
-  padding-top: 0px;
+  display: box;
+  padding: 5px;
   margin: auto;
-  width: 50%;
+  width: 100%;
 }
 
 h1 {
   text-align: center;
   font-family: Helvetice, sans-serif;
-}
-
-.description {
-  font-family: Helvetica, sans-serif;
-  text-align: center;
-  font-size: 18px;
-  color: black;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 /*Body*/
 body {
-  background-color: rgb(250, 220, 164);
+  background-color: lightblue;
+  margin: 0; /*Gets rid of a bit on the side*/
 }
 
 article {
@@ -31,6 +68,13 @@ article {
   margin-bottom: 20px;
   border-style: dashed;
   text-align: left;
+}
+
+img {
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 75%;
 }
 
 hr {
