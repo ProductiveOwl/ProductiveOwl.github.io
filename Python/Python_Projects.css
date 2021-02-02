@@ -39,41 +39,28 @@ a {
 }
 
 /*Header*/
-h2 {
-  background-color: rgb(238, 80, 69);
+h3 {
+  background-color: #24305E;
   color: white;
-  text-decoration: none;
   text-align: center;
   margin-top: 35px;
-  margin-bottom: 0;
-  padding: 20px;
+  padding: 10px;
   font-family: Helvetica, sans-serif;
 }
 
 /*Body*/
 p {
-  padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  text-align: center;
   font-family: Helvetica, sans-serif;
-  color: white;
+  text-align: center;
   background-color: #374785;
-}
-
-div {
-  margin-top: 0;
-  margin-bottom: 0;
+  color: white;
+  border-style: dashed;
+  border-width: 2px;
+  padding: 15px;
+  margin: auto;
 }
 
 body {
   background-color: lightblue;
   margin: 0;
-}
-
-/*Footer*/
-footer p{
-  background-color: #24305E;
-  margin-top: 0;
 }

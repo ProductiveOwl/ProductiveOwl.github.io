@@ -16,7 +16,7 @@ li {
   float: left;
 }
 
-li a {
+li .nav_link {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -24,11 +24,11 @@ li a {
   padding: 10px;
 }
 
-li a:hover {
+li .nav_link:hover {
   background-color: rgb(211, 17, 17);
 }
 
-a {
+.nav_link {
   display: block;
   padding: 8px;
   background-color: rgb(35, 175, 35);
@@ -45,35 +45,47 @@ h2 {
   text-decoration: none;
   text-align: center;
   margin-top: 35px;
-  margin-bottom: 0;
   padding: 20px;
   font-family: Helvetica, sans-serif;
 }
 
 /*Body*/
-p {
-  padding: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
+.info {
   text-align: center;
-  font-family: Helvetica, sans-serif;
   color: white;
-  background-color: #374785;
+  font-family: Helvetica, sans-serif;
 }
 
-div {
-  margin-top: 0;
-  margin-bottom: 0;
+.project_link {
+  text-decoration: none;
 }
 
 body {
-  background-color: lightblue;
+  background-color: #24305E;
   margin: 0;
 }
 
-/*Footer*/
-footer p{
-  background-color: #24305E;
-  margin-top: 0;
+th, td {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+}
+
+th {
+  background-color: #374785;
+}
+
+td {
+  background-color: lightblue;
+}
+
+table {
+  width: 75%;
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
