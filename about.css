@@ -7,7 +7,7 @@ ul {
   top: 0;
   width: 100%;
   overflow: hidden;
-  background-color: rgb(36, 175, 99);
+  background-color: #dbeb68;
 }
 
 li {
@@ -25,31 +25,46 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(219, 34, 34);
+  background-color: rgb(211, 17, 17);
 }
 
 a {
   display: block;
   padding: 8px;
-  background-color: #31a314;
+  background-color: rgb(35, 175, 35);
 }
 
 .active {
-  background-color: rgb(108, 64, 209);
+  background-color: rgb(209, 91, 209);
 }
 
 /*Header*/
-h1 {
-  background-color: rgb(238, 141, 76);
+h2 {
+  background-color: rgb(238, 80, 69);
+  color: white;
+  text-decoration: none;
   text-align: center;
   margin-top: 35px;
-  padding: 10px;
+  margin-bottom: 0;
+  padding: 20px;
+  font-family: Helvetica, sans-serif;
 }
 
 /*Body*/
-.info {
+p {
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   text-align: center;
   font-family: Helvetica, sans-serif;
+  color: white;
+  background-color: #374785;
+}
+
+div {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body {
@@ -58,14 +73,7 @@ body {
 }
 
 /*Footer*/
-hr {
-  height: 2px;
-  color: black;
-  background-color: black;
-  border: none;
-}
-
-footer p {
-  text-align: center;
-  font-family: Helvetica, sans-serif;
+footer p{
+  background-color: #24305E;
+  margin-top: 0;
 }
