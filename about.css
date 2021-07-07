@@ -3,8 +3,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  margin-top: 0;
   width: 100%;
   overflow: hidden;
   background-color: #dbeb68;
@@ -31,16 +31,32 @@ li a:hover {
 a {
   display: block;
   padding: 8px;
-  background-color: rgb(35, 175, 35);
+  background-color: #FCCD04;
 }
 
 .active {
-  background-color: rgb(209, 91, 209);
+  background-color: #ff7b0f;
 }
 
 /*Header*/
-h2 {
+header {
   background-color: rgb(238, 80, 69);
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 0px;
+  padding: 10px;
+  font-family: Helvetica, sans-serif;
+}
+
+h1{
+  display:inline-block;
+  padding: 5px;
+}
+
+/*Title of Page*/
+h2 {
+  background-color: rgb(20, 187, 187);
   color: white;
   text-decoration: none;
   text-align: center;
@@ -58,8 +74,8 @@ p {
   margin-bottom: 0;
   text-align: center;
   font-family: Helvetica, sans-serif;
+  font-size: 18px;
   color: white;
-  background-color: #374785;
 }
 
 div {
@@ -68,12 +84,39 @@ div {
 }
 
 body {
-  background-color: lightblue;
+  background-color: rgba(113, 103, 250, 0.651);
   margin: 0;
 }
 
-/*Footer*/
-footer p{
+/*Footer - kept at the bottom when there is not enough to fill the whole page*/
+footer {
+  margin-top: 20px;
+  color: black;
   background-color: #24305E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  position: absloute;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.diff-main {
+  /*To make footer stick to the bottom*/
+  flex-grow: 1;
+}
+
+footer p {
+  font-size: 15px;
+  font-family: Helvetica, sans-serif;
+  color: white;
   margin-top: 0;
 }
