@@ -110,6 +110,11 @@ h3.big_title {
   min-width: 300px;
 }
 
+h3.custom_title {
+  min-width: 350px;
+  min-height: 40px;
+}
+
 .date {
   border-radius: 10px;
   background-color: rgb(174, 38, 236);
