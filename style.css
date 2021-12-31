@@ -7,7 +7,7 @@ ul {
   margin-top: 0px;
   width: 100%;
   overflow: hidden;
-  background-color: #dbeb68;
+  background-color: rgb(48, 11, 73);
 }
 
 li {
@@ -25,22 +25,26 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(211, 17, 17);
+  border-bottom: 2px solid rgb(44, 46, 160);
+  padding: 9px;
+  background-color: rgb(44, 46, 160);
 }
 
 a {
   display: block;
   padding: 8px;
-  background-color: #FCCD04;
+  background-color: rgb(48, 11, 73);
 }
 
 .active {
-  background-color: #ff7b0f;
+  text-decoration: none;
+  border-bottom: 2px solid #ED3D63;
+  padding-bottom: 3px;
 }
 
 /*Header*/
 header {
-  background-color: rgb(238, 80, 69);
+  background-color: #8D3FD0;
   color: white;
   text-align: left;
   text-decoration: none;
@@ -56,7 +60,7 @@ h1{
 
 /*Body*/
 body {
-  background-color: rgba(113, 103, 250, 0.651);
+  background-color: #161B7F;
   margin: 0; /*Gets rid of a bit on the side*/
 }
 
@@ -87,18 +91,20 @@ article {
 }
 
 .container {
-  background-color: #84CEEB;
-  border: 5px solid grey;
+  border-radius: 30px;
+  border: 2px solid #ED3D63;
+  background-color: #ED3D63;
   margin: 20px auto;
-  height: 250px;
+  height: 200px;
   width: 450px;
+  box-shadow: 10px 10px 5px #8D3FD0;
 }
 
 /*Rounded Corners*/
 article h3 {
   border-radius: 20px;
-  border: 2px solid rgb(3, 37, 172);
-  background-color: rgb(3, 37, 172);
+  border: 2px solid #0683D7;
+  background-color: #0683D7;
   padding: 10px;
   width: 150px;
   height: 20px;
@@ -115,10 +121,11 @@ h3.custom_title {
   min-height: 40px;
 }
 
+h3.anniversary_title {
+  min-width: 300px;
+}
+
 .date {
-  border-radius: 10px;
-  background-color: rgb(174, 38, 236);
-  padding: 10px;
   width: 75px;
   height: 10px;
   font-size: 12px;
@@ -131,7 +138,7 @@ h3.custom_title {
 footer {
   height: 80px;
   color: black;
-  background-color: #24305E;
+  background-color: rgb(48, 11, 73);
   display: flex;
   align-items: center;
   justify-content: center;
