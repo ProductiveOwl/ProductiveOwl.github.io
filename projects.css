@@ -4,10 +4,10 @@ ul {
   margin: 0;
   padding: 0;
   position: absolute;
-  margin-top: 0;
+  margin-top: 0px;
   width: 100%;
   overflow: hidden;
-  background-color: #dbeb68;
+  background-color: rgb(48, 11, 73);
 }
 
 li {
@@ -16,7 +16,7 @@ li {
   float: left;
 }
 
-li .nav_link {
+li a {
   color: white;
   text-decoration: none;
   text-align: center;
@@ -25,22 +25,26 @@ li .nav_link {
 }
 
 li .nav_link:hover {
-  background-color: rgb(211, 17, 17);
+  border-bottom: 2px solid rgb(44, 46, 160);
+  padding: 9px;
+  background-color: rgb(44, 46, 160);
 }
 
 .nav_link {
   display: block;
   padding: 8px;
-  background-color: #FCCD04;
+  background-color: rgb(48, 11, 73);
 }
 
 .active {
-  background-color: #ff7b0f;
+  text-decoration: none;
+  border-bottom: 2px solid #ED3D63;
+  padding-bottom: 3px;
 }
 
 /*Header*/
 header {
-  background-color: rgb(238, 80, 69);
+  background-color: #8D3FD0;
   color: white;
   text-align: left;
   text-decoration: none;
@@ -54,16 +58,17 @@ h1{
   padding: 5px;
 }
 
-/*Title of Page*/
+  /*Title of Page*/
 h2 {
-  background-color: rgb(20, 187, 187);
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 35px;
-  padding: 20px;
-  font-family: Helvetica, sans-serif;
-}
+    background-color: rgb(20, 187, 187);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0;
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+  }
 
 /*Body*/
 .main {
@@ -102,7 +107,7 @@ td {
 }
 
 table {
-  width: 75%;
+  width: 90%;
   margin: auto;
 }
 
