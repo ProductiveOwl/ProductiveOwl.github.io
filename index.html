@@ -6,31 +6,45 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Coding Blog</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<script src="script.js"></script>
-
   <!--This is the header of the blog-->
-	<header>
+	<!--<header>
 		<h1>Coding Blog</h1>
-	</header>
+	</header>-->
 
-  <!--Navigation Bar-->
-  <ul>
-    <li><a class="active" href="index.html">Blog</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-  </ul>
+  <div class="mainMenu">
+    <div class="siteName"><h3><a href="index.html"><b>ProductiveOwl</b></a></h3></div>
+    <!--Navigation Bar-->
+    <ul class="NavBar">
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="index.html">Blog</a></li>
+      <li><a href="about.html">Coop Reflections</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </div>
 
   <!--Title of this page-->
   <div class="main">
-    <div class="welcome">
-      <h2>Welcome!</h2>
-      <p>This is the blog of @ProductiveOwl on Github. Below are updates to this blog.</p>
+    <div class="titleBlock">
+      <img class="codeIcon" src="CodeBlock.svg">
+      <div class="titleText">
+        <h1>Coding Blog</h1>
+        <p>This is the blog of @ProductiveOwl on Github. Below are updates to this website.</p>
+      </div>
     </div>
 
     <!--These are blog posts-->
+    <div class="container">
+      <article>
+        <h3>Mancala Project</h3>
+        <p class="date long_date">January 6, 2024</p>
+        <p>I have added a game called "Mancala" to my Github account. The link to the game files are under the projects tab.</p>
+      </article>
+    </div> 
     <div class="container">
         <article>
           <h3>New Projects</h3>
