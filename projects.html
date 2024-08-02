@@ -1,39 +1,93 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Projects</title>
-    <link href="projects.css" rel="stylesheet" type="text/css"/>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Projects</title>
+  <link href="projects.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
-
-    <!--This is the header of the blog-->
-	  <header>
-		  <h1>Coding Blog</h1>
-	  </header>
-
+<body>
+  <div class="mainMenu">
+    <div id="siteName">
+      <h3><a id="titleLink" href="index.html"><b>ProductiveOwl</b></a></h3>
+    </div>
     <!--Navigation Bar-->
-    <ul>
-      <li><a href="index.html" class="nav_link">Blog</a></li>
-      <li><a href="about.html" class="nav_link">About</a></li>
-      <li><a class="active nav_link" href="projects.html">Projects</a></li>
+    <ul class="NavBar">
+      <li><a class="menuLink" href="about.html">About</a></li>
+      <li><a class="menuLink" href="index.html">Blog</a></li>
+      <li><a class="menuLink" href="coopReflections.html">Coop Reflections</a></li>
+      <li><a class="active menuLink" href="projects.html">Projects</a></li>
     </ul>
+  </div>
 
-    <div class="page-container">
-      <div class="diff-main">
+  <!--Title of this page-->
+  <div class="main">
+    <div class="titleBlock">
+      <img class="pageIcon" src="terminalIcon.svg">
+      <!--This is the header of the blog-->
+      <div class="titleText">
+        <h1>Projects</h1>
+        <p>Here are my projects (also available on Github @ProductiveOwl). Make sure to press the play button for
+          projects on replit.com</p>
+      </div>
+    </div>
 
-      <div class="main">
-        <h2>Projects</h2>
-        <p class="info">Here are my projects (also available on Github @ProductiveOwl). Make sure to press the play button for projects on replit.com</p>
+    <div id="projectTiles">
+      <div class="container">
+        <article>
+          <h3>Factor Finder</h3>
+          <p>Finds the factor of a number.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
 
-      <table>
+      <div class="container">
+        <article>
+          <h3>Factor Finder</h3>
+          <p>Finds the factor of a number.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <h3>Coins to Dollar Amount</h3>
+          <p>Convert your coins to a final amount.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/RockPaperScissors.html" class="project_link">
+            <h3>Rock Paper Scissors</h3>
+          </a>
+          <p>The player can play rock paper scissors against the computer.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--<table>
         <tr>
           <th>Python</th>
           <th>Java</th>
           <th>JavaScript</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td><a href="https://github.com/ProductiveOwl/Website-Projects" class="project_link">Mancala</a></td>
+          <td></td>
         </tr>
         <tr>
           <td><a href="Python/tkTicTacToe.html" class="project_link">Tic Tac Toe + GUI</a></td>
@@ -65,13 +119,12 @@
         <td><a href="Java/Coins_to_Dollar_Amount.html" class="project_link">Coins to Dollar Amount</a></td>
         <td></td>
       </tr>
-      </table>
-      </div>
-    </div>
-
-    <footer>
-		  <p>Most projects are shown with replit.com</p>
-	  </footer>
+      </table>-->
   </div>
-  </body>
+
+  <footer>
+    <p>Most projects are shown with replit.com</p>
+  </footer>
+</body>
+
 </html>
