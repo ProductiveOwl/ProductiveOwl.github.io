@@ -4,7 +4,6 @@ ul {
   margin: 0;
   padding: 0;
   position: absolute;
-  margin-right: 0;
   width: 53%;
   overflow: hidden;
   background-color: rgb(113, 103, 250);
@@ -93,26 +92,20 @@ h1 {
   font-family: Helvetica, sans-serif;
   border: 2px solid #8a5acc;
   display: inline-block;
-  
   width: 40%;
-  margin: 0 auto;
-
-  position: relative;
-  top: 50%;
 }
 
 .titleBlock {
   background-color: rgb(48, 11, 73);
   border: 2px solid rgb(48, 11, 73);
   color: white;
-  top: 0;
   width: 100%;
   display: inline;
   background-image: url(skyBackground.jpg);
 
-  flex-wrap: none;
-  justify-content: none;
-  align-content: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Body*/
@@ -125,9 +118,10 @@ body {
   /*margin-top: 30px;*/
   margin-top: 0px;
   /*display: inline-flex;*/
-  flex-wrap: wrap;
+
+  /*flex-wrap: wrap;
   justify-content: space-around;
-  align-content: space-evenly;
+  align-content: space-evenly;*/
 
   display: flex;
   flex-direction: column;
@@ -153,6 +147,9 @@ article {
   height: 20%;
   width: 70%;
   box-shadow: 10px 10px 5px #8D3FD0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
 }
 
 /*Rounded Corners*/
