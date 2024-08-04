@@ -6,7 +6,7 @@ ul {
   position: absolute;
   width: 53%;
   overflow: hidden;
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(250, 149, 103);*/
   display: inline-block;
 }
@@ -34,7 +34,7 @@ li a:hover {
 
 .menuLink, #titleLink {
   display: block;
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   text-decoration: none;
   color: white;
   font-family: Helvetica, sans-serif;
@@ -47,7 +47,7 @@ li a:hover {
 }
 
 #siteName {
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(103, 250, 123);*/
   text-align: left;
   margin: 0px;
@@ -62,13 +62,13 @@ li a:hover {
   padding: 0px;
   text-decoration: none;
   color: white;
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
 }
 
 .mainMenu {
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   width: 100%;
   display: inline-block;
 }
@@ -82,7 +82,7 @@ h1 {
 .codeIcon {
   position: relative;
   float: left;
-  border: 2px solid #8a5acc;
+  /*border: 2px solid #8a5acc;*/
   width: 50%;
   display: inline;
 }
@@ -90,18 +90,18 @@ h1 {
 .titleText {
   text-align: center;
   font-family: Helvetica, sans-serif;
-  border: 2px solid #8a5acc;
+  /*border: 2px solid #8a5acc;*/
   display: inline-block;
   width: 40%;
 }
 
 .titleBlock {
   background-color: rgb(48, 11, 73);
-  border: 2px solid rgb(48, 11, 73);
+  /*border: 2px solid rgb(48, 11, 73);*/
   color: white;
   width: 100%;
   display: inline;
-  background-image: url(skyBackground.jpg);
+  /*background-image: url(skyBackground.jpg);*/
 
   display: flex;
   align-items: center;
@@ -169,7 +169,7 @@ article h3 {
 footer {
   margin-top: 20px;
   color: black;
-  background-color: #24305E;
+  background-color: rgb(48, 11, 73);
   display: flex;
   align-items: center;
   justify-content: center;

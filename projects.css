@@ -6,8 +6,9 @@ ul {
   position: absolute;
   width: 53%;
   overflow: hidden;
-  background-color: rgb(113, 103, 250);
-  /*border: 2px solid rgb(250, 149, 103);*/
+  /*background-color: rgb(113, 103, 250);
+  border: 2px solid rgb(250, 149, 103);*/
+  background-color: rgb(48, 11, 73);
   display: inline-block;
 }
 
@@ -34,7 +35,7 @@ li a:hover {
 
 .menuLink, #titleLink {
   display: block;
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   text-decoration: none;
   color: white;
   font-family: Helvetica, sans-serif;
@@ -47,7 +48,7 @@ li a:hover {
 }
 
 #siteName {
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(103, 250, 123);*/
   text-align: left;
   margin: 0px;
@@ -62,13 +63,13 @@ li a:hover {
   padding: 0px;
   text-decoration: none;
   color: white;
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
 }
 
 .mainMenu {
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   width: 100%;
   display: inline-block;
 }
@@ -82,7 +83,7 @@ h1 {
 .pageIcon {
   position: relative;
   float: left;
-  border: 2px solid #8a5acc;
+  /*border: 2px solid #8a5acc;*/
   width: 50%;
   display: inline;
 }
@@ -90,18 +91,17 @@ h1 {
 .titleText {
   text-align: center;
   font-family: Helvetica, sans-serif;
-  border: 2px solid #8a5acc;
+  /*border: 2px solid #8a5acc;*/
   display: inline-block;
   width: 40%;
 }
 
 .titleBlock {
   background-color: rgb(48, 11, 73);
-  border: 2px solid rgb(48, 11, 73);
+  /*border: 2px solid rgb(48, 11, 73);*/
   color: white;
   width: 100%;
   display: inline;
-  background-image: url(skyBackground.jpg);
 
   display: flex;
   align-items: center;
@@ -114,16 +114,8 @@ body {
   margin: 0; /*Gets rid of a bit on the side*/
 }
 
-/*Body*/
 .main {
-  /*margin-top: 30px;*/
   margin-top: 0px;
-  /*display: inline-flex;*/
-
-  /*flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-evenly;*/
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -159,9 +151,6 @@ article {
 
 .container {
   border-radius: 30px;
-  /*border: 2px solid #ED3D63;
-  background-color: #ED3D63;
-  #EA7 = peach*/
   border: 2px solid #BD9DEA;
   background-color: #BD9DEA;
   margin: 20px auto;
@@ -173,10 +162,6 @@ article {
 /*Rounded Corners*/
 article h3 {
   border-radius: 20px;
-  /*border: 2px solid #0683D7;
-  background-color: #0683D7;
-  border: 2px solid #8a5acc;
-  background-color: #8a5acc;*/
   border: 2px solid #8D3FD0;
   background-color: #8D3FD0;
   padding: 10px;
@@ -187,36 +172,35 @@ article h3 {
   height: auto;
 }
 
-h3.big_title {
+h3 .medium_title {
   max-width: 300px;
   width: auto;
   height: auto;
 }
 
-h3.custom_title {
+h3 .huge_title {
   width: auto;
   height: auto;
   max-width: 500px;
 }
 
-h3.anniversary_title {
-  max-width: 300px;
-  width: auto;
-  height: auto;
+article p {
+  padding: 0;
+  margin-bottom: 5px;
 }
 
 .languageIcons {
   display: flex;
   width: 90%;
   height: auto;
-  border: 2px solid #8a5acc;
+  /*border: 2px solid #8a5acc;*/
   flex-wrap: wrap;
 }
 
 .codeIcon {
   position: relative;
   float: left;
-  border: 2px solid #8a5acc;
+  /*border: 2px solid #8a5acc;*/
   width: 20%;
   display: inline;
   padding: 2%;
@@ -226,11 +210,15 @@ h3.anniversary_title {
   height: auto;
 }
 
+#sqlLogo {
+  height: fit-content;
+}
+
 /*Footer - kept at the bottom when there is not enough to fill the whole page*/
 footer {
   margin-top: 20px;
   color: black;
-  background-color: #24305E;
+  background-color: rgb(48, 11, 73);
   display: flex;
   align-items: center;
   justify-content: center;

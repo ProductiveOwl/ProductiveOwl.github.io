@@ -7,7 +7,8 @@ ul {
   margin-right: 0;
   width: 53%;
   overflow: hidden;
-  background-color: rgb(113, 103, 250);
+  /*background-color: rgb(113, 103, 250);*/
+  background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(250, 149, 103);*/
   display: inline-block;
 }
@@ -35,7 +36,8 @@ li a:hover {
 
 .menuLink, #titleLink {
   display: block;
-  background-color: rgb(113, 103, 250);
+  /*background-color: rgb(113, 103, 250);*/
+  background-color: rgb(48, 11, 73);
   text-decoration: none;
   color: white;
   font-family: Helvetica, sans-serif;
@@ -47,19 +49,9 @@ li a:hover {
   padding-bottom: 5px;
 }
 
-/*Header*/
-/*header {
-  background-color: #8D3FD0;
-  color: white;
-  text-align: left;
-  text-decoration: none;
-  margin-top: 0px;
-  padding: 10px;
-  font-family: Helvetica, sans-serif;
-}*/
-
 #siteName {
-  background-color: rgb(113, 103, 250);
+  /*background-color: rgb(113, 103, 250);*/
+  background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(103, 250, 123);*/
   text-align: left;
   margin: 0px;
@@ -80,17 +72,10 @@ li a:hover {
 }
 
 .mainMenu {
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   width: 100%;
   display: inline-block;
 }
-
-/*.gitNav {
-  display: inline;
-  width: 2%;
-  float: right;
-  margin: 0;
-}*/
 
 h1 {
   display:inline-block;
@@ -103,19 +88,14 @@ h1 {
   /*border: 2px solid #8a5acc;*/
   width: 50%;
   display: inline;
-  /*<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#FFFFFF"><path d="m379-343 44-44-93-93 92-92-44-44-136 136 137 137Zm202 0 137-137-137-137-44 44 93 93-93 93 44 44ZM180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600H180v600Zm0-600v600-600Z"/></svg>*/
 }
 
 .titleText {
-  float: left;
   text-align: center;
   font-family: Helvetica, sans-serif;
   /*border: 2px solid #8a5acc;*/
+  display: inline-block;
   width: 40%;
-  margin: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 /*Body*/
@@ -126,17 +106,27 @@ body {
 
 .titleBlock {
   background-color: rgb(48, 11, 73);
-  border: 2px solid rgb(48, 11, 73);
+  /*border: 2px solid rgb(48, 11, 73);*/
   color: white;
-  top: 0;
   width: 100%;
-  display: inline-block;
-  background-image: url(skyBackground.jpg);
+  display: inline;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
-  /*margin-top: 30px;*/
   margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /*To make footer stick to the bottom*/
+  flex-grow: 1;
+}
+
+#projectTiles {
+  margin-top: 30px;
   display: inline-flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -154,9 +144,6 @@ article {
 
 .container {
   border-radius: 30px;
-  /*border: 2px solid #ED3D63;
-  background-color: #ED3D63;
-  #EA7 = peach*/
   border: 2px solid #BD9DEA;
   background-color: #BD9DEA;
   margin: 20px auto;
@@ -168,10 +155,6 @@ article {
 /*Rounded Corners*/
 article h3 {
   border-radius: 20px;
-  /*border: 2px solid #0683D7;
-  background-color: #0683D7;
-  border: 2px solid #8a5acc;
-  background-color: #8a5acc;*/
   border: 2px solid #8D3FD0;
   background-color: #8D3FD0;
   padding: 10px;
@@ -201,22 +184,19 @@ h3.anniversary_title {
 }
 
 .date {
-  /*width: 75px;
-  height: 10px;*/
   font-size: 0.75em;
 }
 
-/*.long_date {
-  width: 110px;
-}*/
-
+/*Footer - kept at the bottom when there is not enough to fill the whole page*/
 footer {
-  height: auto;
-  width: 100%;
+  margin-top: 20px;
+  color: black;
   background-color: rgb(48, 11, 73);
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 0;
+  width: 100%;
 }
 
 .gitIcon {
@@ -225,13 +205,6 @@ footer {
   display: inline-block;
   width: 20%;
   margin: 0;
-  /*border: 2px solid #8a5acc;
-  width: 5%;
-  padding: 10px;
-  display: inline;
-  background-color: none;
-  text-decoration: none;*/
-
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -241,9 +214,7 @@ footer p {
   font-size: 15px;
   font-family: Helvetica, sans-serif;
   color: white;
-  /*border: 2px solid #8a5acc;*/
   padding: 10px;
-
   display: inline-block;
   margin: 0;
   margin-left: 18%;
