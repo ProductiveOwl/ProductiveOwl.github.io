@@ -1,77 +1,219 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Projects</title>
-    <link href="projects.css" rel="stylesheet" type="text/css"/>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Projects</title>
+  <link href="projects.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
-
-    <!--This is the header of the blog-->
-	  <header>
-		  <h1>Coding Blog</h1>
-	  </header>
-
+<body>
+  <div class="mainMenu">
+    <div id="siteName">
+      <h3><a id="titleLink" href="index.html"><b>ProductiveOwl</b></a></h3>
+    </div>
     <!--Navigation Bar-->
-    <ul>
-      <li><a href="index.html" class="nav_link">Blog</a></li>
-      <li><a href="about.html" class="nav_link">About</a></li>
-      <li><a class="active nav_link" href="projects.html">Projects</a></li>
+    <ul class="NavBar">
+      <li><a class="menuLink" href="about.html">About</a></li>
+      <li><a class="menuLink" href="index.html">Blog</a></li>
+      <li><a class="menuLink" href="coopReflections.html">Coop Reflections</a></li>
+      <li><a class="active menuLink" href="projects.html">Projects</a></li>
     </ul>
+  </div>
 
-    <div class="page-container">
-      <div class="diff-main">
-
-      <div class="main">
-        <h2>Projects</h2>
-        <p class="info">Here are my projects (also available on Github @ProductiveOwl). Make sure to press the play button for projects on replit.com</p>
-
-      <table>
-        <tr>
-          <th>Python</th>
-          <th>Java</th>
-          <th>JavaScript</th>
-        </tr>
-        <tr>
-          <td><a href="Python/tkTicTacToe.html" class="project_link">Tic Tac Toe + GUI</a></td>
-          <td><a href="https://github.com/ProductiveOwl/Website-Projects/tree/main/Java/GameEscape" class="project_link">Game Escape</a></td>
-          <td><a href="JavaScript/Counter/Counter.html" class="project_link">Counter</td>
-        </tr>
-        <tr>
-          <td><a href="Python/VertToShape.html" class="project_link">Vertices to Shape</a></td>
-          <td><a href="Java/Blackjack.html" class="project_link">Blackjack</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><a href="Python/Hangman.html" class="project_link">Hangman</a></td>
-          <td><a href="Java/TempConverter.html" class="project_link">Temperature Converter</a></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><a href="Python/TicTacToe.html" class="project_link">Tic Tac Toe</a></td>
-          <td><a href="Java/GuessTheNumber.html" class="project_link">Guess The Number</a></td>
-          <td></td>
-        </tr>
-        <tr>
-        <td><a href="Python/FactorFinder.html" class="project_link">Factor Finder</a></td>
-        <td><a href="Java/FactorFinder.html" class="project_link">Factor Finder</a></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a href="Python/RockPaperScissors.html" class="project_link">Rock Paper Scissors</a></td>
-        <td><a href="Java/Coins_to_Dollar_Amount.html" class="project_link">Coins to Dollar Amount</a></td>
-        <td></td>
-      </tr>
-      </table>
+  <!--Title of this page-->
+  <div class="main">
+    <div class="titleBlock">
+      <img class="pageIcon" src="terminalIcon.svg">
+      <!--This is the header of the blog-->
+      <div class="titleText">
+        <h1>Projects</h1>
+        <p>Here are my projects (also available on Github @ProductiveOwl). Make sure to press the play button for
+          projects on replit.com</p>
       </div>
     </div>
 
-    <footer>
-		  <p>Most projects are shown with replit.com</p>
-	  </footer>
+    <div id="projectTiles">
+
+      <div class="container">
+        <article>
+          <a href="https://github.com/ProductiveOwl/Pool" class="project_link">
+            <h3>Pool</h3>
+          </a>
+          <p>A small full stack project that allows two players to play pool.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="CLogo.svg">
+            <img class="codeIcon" src="pythonLogo.svg">
+            <img class="codeIcon" src="htmlIcon.svg">
+            <img class="codeIcon" src="cssIcon.svg">
+            <img class="codeIcon" src="javascriptIcon.svg">
+            <img class="codeIcon" id="sqlLogo" src="SQLiteLogo.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="JavaScript/Counter/Counter.html" class="project_link">
+            <h3>Counter</h3>
+          </a>
+          <p>A simple counter on a page.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="javascriptIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/tkTicTacToe.html" class="project_link">
+            <h3 class="medium_title">Tic Tac Toe + GUI</h3>
+          </a>
+          <p>Using tkinter, this is a GUI that allows two players to play tic tac toe.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="https://github.com/ProductiveOwl/Website-Projects/tree/main/Java/GameEscape" class="project_link">
+            <h3>GameEscape</h3>
+          </a>
+          <p>Using Java Swing, created a GUI where players race against a clock to win 4 different games.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/VertToShape.html" class="project_link">
+            <h3>Verticies to Shape</h3>
+          </a>
+          <p>Using the tkinter GUI, enter the number of vertices you want and it will draw the shape.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Java/Blackjack.html" class="project_link">
+            <h3>Blackjack</h3>
+          </a>
+          <p>Play blackjack against the computer.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/Hangman.html" class="project_link">
+            <h3>Hangman</h3>
+          </a>
+          <p>Play hangman and choose between multiple categories and difficulties.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Java/TempConverter.html" class="project_link">
+            <h3>Temperature Converter</h3>
+          </a>
+          <p>Convert the temperature between celsius and fahrenheit.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/TicTacToe.html" class="project_link">
+            <h3>Tic Tac Toe</h3>
+          </a>
+          <p>Play tic tac toe with another player.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Java/GuessTheNumber.html" class="project_link">
+            <h3>Guess The Number</h3>
+          </a>
+          <p>Guess the number that the computer chooses.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/FactorFinder.html" class="project_link">
+            <h3>Factor Finder</h3>
+          </a>
+          <p>Finds the factors of a number.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Java/FactorFinder.html" class="project_link">
+            <h3>Factor Finder</h3>
+          </a>
+          <p>Finds the factors of a number.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Java/Coins_to_Dollar_Amount.html" class="project_link">
+            <h3>Coins to Dollar Amount</h3>
+          </a>
+          <p>Convert your coins to a final amount.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="coffeeIcon.svg">
+          </div>
+        </article>
+      </div>
+
+      <div class="container">
+        <article>
+          <a href="Python/RockPaperScissors.html" class="project_link">
+            <h3>Rock Paper Scissors</h3>
+          </a>
+          <p>The player can play rock paper scissors against the computer.</p>
+          <div class="languageIcons">
+            <img class="codeIcon" src="pythonLogo.svg">
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
-  </body>
+
+  <footer>
+    <p>Most projects are shown with replit.com</p>
+  </footer>
+</body>
+
 </html>

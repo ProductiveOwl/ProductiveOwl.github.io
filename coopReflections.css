@@ -4,10 +4,8 @@ ul {
   margin: 0;
   padding: 0;
   position: absolute;
-  margin-right: 0;
   width: 53%;
   overflow: hidden;
-  /*background-color: rgb(113, 103, 250);*/
   background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(250, 149, 103);*/
   display: inline-block;
@@ -36,7 +34,6 @@ li a:hover {
 
 .menuLink, #titleLink {
   display: block;
-  /*background-color: rgb(113, 103, 250);*/
   background-color: rgb(48, 11, 73);
   text-decoration: none;
   color: white;
@@ -50,7 +47,6 @@ li a:hover {
 }
 
 #siteName {
-  /*background-color: rgb(113, 103, 250);*/
   background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(103, 250, 123);*/
   text-align: left;
@@ -66,7 +62,7 @@ li a:hover {
   padding: 0px;
   text-decoration: none;
   color: white;
-  background-color: rgb(113, 103, 250);
+  background-color: rgb(48, 11, 73);
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
 }
@@ -77,6 +73,7 @@ li a:hover {
   display: inline-block;
 }
 
+/*Header*/
 h1 {
   display:inline-block;
   padding: 5px;
@@ -98,39 +95,39 @@ h1 {
   width: 40%;
 }
 
-/*Body*/
-body {
-  background-color: #D1CFE2;
-  margin: 0; /*Gets rid of a bit on the side*/
-}
-
 .titleBlock {
   background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(48, 11, 73);*/
   color: white;
   width: 100%;
   display: inline;
+  /*background-image: url(skyBackground.jpg);*/
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/*Body*/
+body {
+  background-color: #D1CFE2;
+  margin: 0; /*Gets rid of a bit on the side*/
+}
+
 .main {
+  /*margin-top: 30px;*/
   margin-top: 0px;
+  /*display: inline-flex;*/
+
+  /*flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;*/
+
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   /*To make footer stick to the bottom*/
   flex-grow: 1;
-}
-
-#projectTiles {
-  margin-top: 30px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-evenly;
 }
 
 article {
@@ -150,6 +147,9 @@ article {
   height: 20%;
   width: 70%;
   box-shadow: 10px 10px 5px #8D3FD0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
 }
 
 /*Rounded Corners*/
@@ -165,29 +165,7 @@ article h3 {
   height: auto;
 }
 
-h3.big_title {
-  max-width: 300px;
-  width: auto;
-  height: auto;
-}
-
-h3.custom_title {
-  width: auto;
-  height: auto;
-  max-width: 500px;
-}
-
-h3.anniversary_title {
-  max-width: 300px;
-  width: auto;
-  height: auto;
-}
-
-.date {
-  font-size: 0.75em;
-}
-
-/*Footer - kept at the bottom when there is not enough to fill the whole page*/
+/*Footer*/
 footer {
   margin-top: 20px;
   color: black;
@@ -197,28 +175,14 @@ footer {
   justify-content: center;
   bottom: 0;
   width: 100%;
-}
-
-.gitIcon {
-  position: relative;
-  padding: 10px;
-  display: inline-block;
-  width: 20%;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  position: absloute;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 footer p {
   font-size: 15px;
   font-family: Helvetica, sans-serif;
   color: white;
-  padding: 10px;
-  display: inline-block;
-  margin: 0;
-  margin-left: 18%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  margin-top: 0;
 }
