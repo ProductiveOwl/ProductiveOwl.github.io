@@ -153,9 +153,10 @@ article {
   border-radius: 30px;
   border: 2px solid #BD9DEA;
   background-color: #BD9DEA;
-  margin: 20px auto;
+  margin: 20px;
   height: 20%;
-  width: 30%;
+  width: 40%;
+  max-width: 250px;
   box-shadow: 10px 10px 5px #8D3FD0;
 }
 
@@ -164,23 +165,18 @@ article h3 {
   border-radius: 20px;
   border: 2px solid #8D3FD0;
   background-color: #8D3FD0;
-  padding: 10px;
-  max-width: 150px;
+  padding: 10px 20px;
   margin: 0 auto;
   text-align: center;
-  width: auto;
+  width: fit-content;
   height: auto;
 }
 
-h3 .medium_title {
-  max-width: 300px;
-  width: auto;
-  height: auto;
+.medium_title {
+  max-width: 250px;
 }
 
-h3 .huge_title {
-  width: auto;
-  height: auto;
+.huge_title {
   max-width: 500px;
 }
 
