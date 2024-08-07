@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Projects</title>
-  <link href="projects.css" rel="stylesheet" type="text/css" />
+  <link href="projects.css" rel="stylesheet" type="text/css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="projects.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -34,9 +36,24 @@
       </div>
     </div>
 
+    <div id="filters">
+      <h2>Filter Projects: </h2>
+
+      <div id="allButtons">
+        <button class="btn active" data-filter="*" onclick=filterLanguage(event)>All</button>
+        <button class="btn" data-filter="python" onclick=filterLanguage(event)>Python</button>
+        <button class="btn" data-filter="java" onclick=filterLanguage(event)>Java</button>
+        <button class="btn" data-filter="c" onclick=filterLanguage(event)>C</button>
+        <button class="btn" data-filter="html" onclick=filterLanguage(event)>HTML</button>
+        <button class="btn" data-filter="css" onclick=filterLanguage(event)>CSS</button>
+        <button class="btn" data-filter="javascript" onclick=filterLanguage(event)>Javascript</button>
+        <button class="btn" data-filter="sql" onclick=filterLanguage(event)>SQL</button>
+      </div>
+    </div>
+
     <div id="projectTiles">
 
-      <div class="container">
+      <div class="container c python html css javascript sql">
         <article>
           <a href="https://github.com/ProductiveOwl/Pool" class="project_link">
             <h3>Pool</h3>
@@ -53,7 +70,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container javascript">
         <article>
           <a href="JavaScript/Counter/Counter.html" class="project_link">
             <h3>Counter</h3>
@@ -65,7 +82,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container python">
         <article>
           <a href="Python/tkTicTacToe.html" class="project_link">
             <h3 class="medium_title">Tic Tac Toe + GUI</h3>
@@ -77,7 +94,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container java">
         <article>
           <a href="https://github.com/ProductiveOwl/Website-Projects/tree/main/Java/GameEscape" class="project_link">
             <h3>Game Escape</h3>
@@ -89,10 +106,10 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container python">
         <article>
           <a href="Python/VertToShape.html" class="project_link">
-            <h3 class="medium_title">Verticies to Shape</h3>
+            <h3 class="medium_title">Vertices to Shape</h3>
           </a>
           <p>Using the tkinter GUI, enter the number of vertices you want and it will draw the shape.</p>
           <div class="languageIcons">
@@ -101,7 +118,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container java">
         <article>
           <a href="Java/Blackjack.html" class="project_link">
             <h3>Blackjack</h3>
@@ -113,7 +130,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container python">
         <article>
           <a href="Python/Hangman.html" class="project_link">
             <h3>Hangman</h3>
@@ -125,7 +142,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container java">
         <article>
           <a href="Java/TempConverter.html" class="project_link">
             <h3 class="medium_title">Temperature Converter</h3>
@@ -137,7 +154,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container python">
         <article>
           <a href="Python/TicTacToe.html" class="project_link">
             <h3>Tic Tac Toe</h3>
@@ -149,7 +166,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container java">
         <article>
           <a href="Java/GuessTheNumber.html" class="project_link">
             <h3 class="medium_title">Guess The Number</h3>
@@ -161,7 +178,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container python">
         <article>
           <a href="Python/FactorFinder.html" class="project_link">
             <h3>Factor Finder</h3>
@@ -173,7 +190,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container java">
         <article>
           <a href="Java/FactorFinder.html" class="project_link">
             <h3>Factor Finder</h3>
@@ -185,7 +202,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container java">
         <article>
           <a href="Java/Coins_to_Dollar_Amount.html" class="project_link">
             <h3 class="medium_title">Coins to Dollar Amount</h3>
@@ -197,7 +214,7 @@
         </article>
       </div>
 
-      <div class="container">
+      <div class="container python">
         <article>
           <a href="Python/RockPaperScissors.html" class="project_link">
             <h3 class="medium_title">Rock Paper Scissors</h3>
