@@ -27,7 +27,8 @@
   <!--Title of this page-->
   <div class="main">
     <div class="titleBlock">
-      <img class="pageIcon" src="terminalIcon.svg">
+      <img class="pageIcon" alt="terminalIcon" src="terminalIcon.svg">
+      
       <!--This is the header of the blog-->
       <div class="titleText">
         <h1>Projects</h1>
@@ -36,21 +37,22 @@
       </div>
     </div>
 
+    <!--This is the filter section-->
     <div id="filters">
       <h2>Filter Projects: </h2>
-
       <div id="allButtons">
-        <button class="btn active" data-filter="*" onclick=filterLanguage(event)>All</button>
-        <button class="btn" data-filter="python" onclick=filterLanguage(event)>Python</button>
-        <button class="btn" data-filter="java" onclick=filterLanguage(event)>Java</button>
-        <button class="btn" data-filter="c" onclick=filterLanguage(event)>C</button>
-        <button class="btn" data-filter="html" onclick=filterLanguage(event)>HTML</button>
-        <button class="btn" data-filter="css" onclick=filterLanguage(event)>CSS</button>
-        <button class="btn" data-filter="javascript" onclick=filterLanguage(event)>Javascript</button>
-        <button class="btn" data-filter="sql" onclick=filterLanguage(event)>SQL</button>
+        <button class="btn * activeBtn" data-filter="*" onclick=filterLanguage(event)>All</button>
+        <button class="btn python" data-filter="python" onclick=filterLanguage(event)>Python</button>
+        <button class="btn java" data-filter="java" onclick=filterLanguage(event)>Java</button>
+        <button class="btn c" data-filter="c" onclick=filterLanguage(event)>C</button>
+        <button class="btn html" data-filter="html" onclick=filterLanguage(event)>HTML</button>
+        <button class="btn css" data-filter="css" onclick=filterLanguage(event)>CSS</button>
+        <button class="btn javascript" data-filter="javascript" onclick=filterLanguage(event)>Javascript</button>
+        <button class="btn sql" data-filter="sql" onclick=filterLanguage(event)>SQL</button>
       </div>
     </div>
 
+    <!--These are all the projects-->
     <div id="projectTiles">
 
       <div class="container c python html css javascript sql">
