@@ -12,6 +12,57 @@ ul {
   display: inline-block;
 }
 
+/* For a screen that is less than 650px wide, change the horizontal navigation bar into a side bar */
+@media screen and (max-width: 650px) {
+  .NavBar li {
+    display: none;
+  }
+
+  .menuIcon {
+    position: relative;
+    padding: 0px;
+    width: 45px;
+    margin: 0;
+    margin-right: 1%;
+    float: right;
+    /*border: 2px solid rgb(227, 124, 72);*/
+  }
+
+  .responsive {
+    position: relative;
+    /*border: 2px solid rgb(87, 227, 72);*/
+    float: right;
+    width: 100%;
+  }
+
+  .responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+    /*border: 2px solid #BD9DEA;*/
+  }
+
+  li .active {
+    text-decoration: none;
+    border-bottom: none;
+    background-color: #BD9DEA;
+  }
+
+}
+
+/*Adjust the styles for bigger screens*/
+@media screen and (min-width: 650px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .active {
+    text-decoration: none;
+    border-bottom: 5px solid #BD9DEA;
+    padding-bottom: 5px;
+  }
+}
+
 li {
   display: inline;
   /*border: 1px, solid, grey;*/
@@ -33,18 +84,13 @@ li a:hover {
   color: white;
 }
 
-.menuLink, #titleLink {
+.menuLink,
+#titleLink {
   display: block;
   background-color: rgb(48, 11, 73);
   text-decoration: none;
   color: white;
   font-family: Helvetica, sans-serif;
-}
-
-.active {
-  text-decoration: none;
-  border-bottom: 5px solid #BD9DEA;
-  padding-bottom: 5px;
 }
 
 #siteName {
@@ -76,7 +122,7 @@ li a:hover {
 
 /*Header*/
 h1 {
-  display:inline-block;
+  display: inline-block;
   padding: 5px;
 }
 
@@ -111,7 +157,7 @@ h1 {
 /*Body*/
 body {
   background-color: #D1CFE2;
-  margin: 0; /*Gets rid of a bit on the side*/
+  margin: 0; /*Gets rid of a bit on the side*/ 
 }
 
 .main {
@@ -129,7 +175,7 @@ body {
   align-items: center;
   justify-content: center;
   /*border: 2px solid #8a5acc;*/
-  background-color:  #BD9DEA;
+  background-color: #BD9DEA;
 }
 
 h2 {
@@ -241,7 +287,7 @@ article p {
   width: 20%;
   display: inline;
   padding: 2%;
-  
+
   max-width: 50px;
   width: auto;
   height: auto;
