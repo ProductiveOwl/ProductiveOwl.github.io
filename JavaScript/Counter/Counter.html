@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Counter</title>
-    <link href="Counter.css" rel="stylesheet" type="text/css"/>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Counter</title>
+  <link href="Counter.css" rel="stylesheet" type="text/css" />
+  <script src="Counter.js" type="text/javascript"></script>
+</head>
 
-  <body>
-    <!--This is the header of the blog-->
-    <header>
-		  <h1>Coding Blog</h1>
-	  </header>
-
-    <!--Navigation Bar-->
-    <ul>
-      <li><a href="../../index.html">Blog</a></li>
-      <li><a href="../../about.html">About</a></li>
-      <li><a class="active" href="../../projects.html">Projects</a></li>
-    </ul>
-
-    <div class="main">
-      <div class="title">
-        <h2>Counter</h2>
-        <p>Increase or decrease the number below using the buttons. Clicking reset will set the number to 0.</p>
-      </div>
-      
-      <span id="real_num">0</span>
-
-      <div class="all_buttons">
-        <button id="increase">Increase</button>
-        <button id="reset">Reset</button>
-        <button id="decrease">Decrease</button>
-      </div>
+<body>
+  <div class="mainMenu">
+    <div id="siteName">
+      <h3><a id="titleLink" href="../../index.html"><b>ProductiveOwl</b></a></h3>
     </div>
-    <script src="Counter.js"></script>
-    </body>
+    <!--Navigation Bar-->
+    <img class="menuIcon" alt="menuIcon" src="../../Images/menuIcon.svg" onclick=toggleResponsive()>
+    <ul class="NavBar">
+      <li><a class="menuLink" href="../../about.html">About</a></li>
+      <li><a class="menuLink" href="../../index.html">Blog</a></li>
+      <li><a class="menuLink" href="../../coopReflections.html">Coop Reflections</a></li>
+      <li><a class="active menuLink" href="../../projects.html">Projects</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="title">
+      <h2>Counter</h2>
+      <p>Increase or decrease the number below using the buttons. Clicking reset will set the number to 0.</p>
+    </div>
+
+    <span id="currentNum">0</span>
+
+    <div class="all_buttons">
+      <button id="decrease" onclick=decrease()>Decrease</button>
+      <button id="reset" onclick=reset()>Reset</button>
+      <button id="increase" onclick=increase()>Increase</button>
+    </div>
+  </div>
+  <!--Footer-->
+  <footer>
+    <p>Use the navigation bar to check out the blog and other projects!</p>
+  </footer>
+</body>
+
 </html>
