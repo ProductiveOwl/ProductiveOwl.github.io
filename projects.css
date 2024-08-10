@@ -63,6 +63,57 @@ ul {
   }
 }
 
+/* For a screen that is less than 650px wide, change the horizontal navigation bar into a side bar */
+@media screen and (max-width: 650px) {
+  .NavBar li {
+    display: none;
+  }
+
+  .menuIcon {
+    position: relative;
+    padding: 0px;
+    width: 45px;
+    margin: 0;
+    margin-right: 1%;
+    float: right;
+    /*border: 2px solid rgb(227, 124, 72);*/
+  }
+
+  .responsive {
+    position: relative;
+    /*border: 2px solid rgb(87, 227, 72);*/
+    float: right;
+    width: 100%;
+  }
+
+  .responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+    /*border: 2px solid #BD9DEA;*/
+  }
+
+  li .active {
+    text-decoration: none;
+    border-bottom: none;
+    background-color: #BD9DEA;
+  }
+
+}
+
+/*Adjust the styles for bigger screens*/
+@media screen and (min-width: 650px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .active {
+    text-decoration: none;
+    border-bottom: 5px solid #BD9DEA;
+    padding-bottom: 5px;
+  }
+}
+
 li {
   display: inline;
   /*border: 1px, solid, grey;*/
