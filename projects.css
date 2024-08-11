@@ -135,8 +135,7 @@ li a:hover {
   color: white;
 }
 
-.menuLink,
-#titleLink {
+.menuLink, #titleLink {
   display: block;
   background-color: rgb(48, 11, 73);
   text-decoration: none;
