@@ -13,15 +13,15 @@
 <body>
   <div class="mainMenu">
     <div id="siteName">
-      <h3><a id="titleLink" href="index.html"><b>ProductiveOwl</b></a></h3>
+      <h3><a id="titleLink" href="index.html"><b>Madhurika</b></a></h3>
     </div>
     <!--Navigation Bar-->
     <img class="menuIcon" alt="menuIcon" src="./Images/menuIcon.svg" onclick=toggleResponsive()>
     <ul class="NavBar">
-      <li><a class="menuLink" href="about.html">About</a></li>
-      <li><a class="menuLink" href="index.html">Blog</a></li>
+      <li><a class="menuLink" href="blog.html">Blog</a></li>
       <li><a class="menuLink" href="coopReflections.html">Coop Reflections</a></li>
       <li><a class="active menuLink" href="projects.html">Projects</a></li>
+      <li><a class="menuLink" href="index.html">Home</a></li>
     </ul>
   </div>
 
@@ -34,13 +34,13 @@
       <div class="titleText">
         <h1>Projects</h1>
         <p>Here are my projects (also available on Github @ProductiveOwl). Make sure to press the play button for
-          projects on replit.com</p>
+          projects on replit.com!</p>
       </div>
     </div>
 
     <!--This is the filter section-->
     <div id="filters">
-      <h2>Filter Projects: </h2>
+      <h2>Filter All Projects: </h2>
       <div id="allButtons">
         <button class="btn * activeBtn" data-filter="*" onclick=filterLanguage(event)>All</button>
         <button class="btn python" data-filter="python" onclick=filterLanguage(event)>Python</button>
@@ -232,7 +232,9 @@
   </div>
 
   <footer>
-    <p>Most projects are shown with replit.com</p>
+    <p>Most projects are shown with replit.com and the rest are on my GitHub!</p>
+    <a href="https://github.com/ProductiveOwl/ProductiveOwl.github.io"><img class="gitIcon" alt="GitHub Logo"
+      src="./Images/gitHubLogo.png"></a>
   </footer>
 </body>
 

@@ -7,7 +7,6 @@ ul {
   margin-right: 0;
   width: 53%;
   overflow: hidden;
-  /*background-color: rgb(113, 103, 250);*/
   background-color: rgb(48, 11, 73);
   /*border: 2px solid rgb(250, 149, 103);*/
   display: inline-block;
@@ -87,7 +86,6 @@ li a:hover {
 
 .menuLink, #titleLink {
   display: block;
-  /*background-color: rgb(113, 103, 250);*/
   background-color: rgb(48, 11, 73);
   text-decoration: none;
   color: white;
@@ -111,7 +109,6 @@ li a:hover {
   padding: 0px;
   text-decoration: none;
   color: white;
-  background-color: rgb(113, 103, 250);
   font-family: Helvetica, sans-serif;
   font-size: 1.5em;
 }
@@ -130,9 +127,10 @@ h1 {
 
 .codeIcon {
   position: relative;
-  float: left;
-  /*border: 2px solid #8a5acc;*/
-  width: 50%;
+  float: right;
+  border: 2px solid #8a5acc;
+  width: 30%;
+  padding: 20px;
   display: inline;
 }
 
@@ -140,23 +138,26 @@ h1 {
   text-align: center;
   font-family: Helvetica, sans-serif;
   /*border: 2px solid #8a5acc;*/
-  display: inline-block;
-  width: 40%;
+  display: inline;
+  float: left;
+  width: 70%;
+  /*border: 2px solid white;*/
 }
 
 /*Body*/
 body {
-  background-color: #D1CFE2;
+  background-color: rgb(48, 11, 73);
   margin: 0; /*Gets rid of a bit on the side*/
 }
 
 .titleBlock {
   background-color: rgb(48, 11, 73);
-  /*border: 2px solid rgb(48, 11, 73);*/
+  /*border: 2px solid #8a5acc;*/
   color: white;
-  width: 100%;
-  display: inline;
-
+  width: 90%;
+  height: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -171,100 +172,16 @@ body {
   flex-grow: 1;
 }
 
-#projectTiles {
-  margin-top: 30px;
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: space-evenly;
-}
-
-article {
-  color: white;
-  margin: 15px;
-  padding: 10px;
-  margin-bottom: 20px;
-  text-align: left;
-  font-family: Helvetica, sans-serif;
-}
-
-.container {
-  border-radius: 30px;
-  border: 2px solid #BD9DEA;
-  background-color: #BD9DEA;
-  margin: 20px auto;
-  height: 20%;
-  width: 70%;
-  box-shadow: 10px 10px 5px #8D3FD0;
-}
-
-/*Rounded Corners*/
-article h3 {
-  border-radius: 20px;
-  border: 2px solid #8D3FD0;
-  background-color: #8D3FD0;
-  padding: 10px;
-  max-width: 150px;
-  margin: 0 auto;
-  text-align: center;
-  width: auto;
-  height: auto;
-}
-
-h3.big_title {
-  max-width: 300px;
-  width: auto;
-  height: auto;
-}
-
-h3.custom_title {
-  width: auto;
-  height: auto;
-  max-width: 500px;
-}
-
-h3.anniversary_title {
-  max-width: 300px;
-  width: auto;
-  height: auto;
-}
-
-.date {
-  font-size: 0.75em;
-}
-
-/*Footer - kept at the bottom when there is not enough to fill the whole page*/
-footer {
-  margin-top: 20px;
-  color: black;
-  background-color: rgb(48, 11, 73);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
+hr {
+  border: 2px solid white;
   width: 100%;
 }
 
 .gitIcon {
   position: relative;
-  padding: 10px;
   display: inline-block;
-  width: 20%;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-footer p {
-  font-size: 15px;
-  font-family: Helvetica, sans-serif;
-  color: white;
-  padding: 10px;
-  display: inline-block;
-  margin: 0;
-  margin-left: 18%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  width: 10%;
+  margin-top: 10%;
+  /*border: 2px solid white;*/
+  /*float: left;*/
 }
