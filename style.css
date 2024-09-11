@@ -128,7 +128,6 @@ h1 {
 .codeIcon {
   position: relative;
   float: right;
-  border: 2px solid #8a5acc;
   width: 30%;
   padding: 20px;
   display: inline;
@@ -141,7 +140,6 @@ h1 {
   display: inline;
   float: left;
   width: 70%;
-  /*border: 2px solid white;*/
 }
 
 /*Body*/
@@ -151,8 +149,9 @@ body {
 }
 
 .titleBlock {
-  background-color: rgb(48, 11, 73);
-  /*border: 2px solid #8a5acc;*/
+  /*background-color: #8F00FF;*/
+  border-radius: 30px;
+  padding-bottom: 20px;
   color: white;
   width: 90%;
   height: 90%;
@@ -161,6 +160,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+hr {
+  width: 100%;
 }
 
 .main {
@@ -172,16 +175,11 @@ body {
   flex-grow: 1;
 }
 
-hr {
-  border: 2px solid white;
-  width: 100%;
-}
-
 .gitIcon {
   position: relative;
   display: inline-block;
   width: 10%;
   margin-top: 10%;
-  /*border: 2px solid white;*/
-  /*float: left;*/
+  /*border: 2px solid white;
+  float: left;*/
 }

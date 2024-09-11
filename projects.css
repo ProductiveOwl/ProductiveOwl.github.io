@@ -225,12 +225,12 @@ body {
   align-items: center;
   justify-content: center;
   /*border: 2px solid #8a5acc;*/
-  background-color: #8D3FD0;
+  background-color: #6622c6;
 }
 
 h2 {
   margin-right: 10px;
-  color: rgb(48, 11, 73);
+  color: white;
   margin-left: 1%;
 }
 
