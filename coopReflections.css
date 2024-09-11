@@ -186,11 +186,11 @@ article {
 
 .container {
   border-radius: 30px;
-  border: 2px solid #BD9DEA;
-  background-color: #BD9DEA;
+  border: 2px solid #6622c6;
+  background-color: #6622c6;
   margin: 20px auto;
   height: 20%;
-  width: 70%;
+  width: 95%;
   box-shadow: 10px 10px 5px #8D3FD0;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -200,14 +200,75 @@ article {
 /*Rounded Corners*/
 article h3 {
   border-radius: 20px;
-  border: 2px solid #8D3FD0;
-  background-color: #8D3FD0;
+  border: 2px solid #BD9DEA;
+  background-color: #BD9DEA;
   padding: 10px;
-  max-width: 150px;
+  max-width: 200px;
   margin: 0 auto;
   text-align: center;
   width: auto;
   height: auto;
+}
+
+/* Creating the border animation */
+@keyframes borderAnimation {
+  0% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.animated-border {
+  animation: borderAnimation 2s infinite;
+}
+
+h4 {
+  font-size: large;
+  text-decoration: underline;
+}
+
+blockquote {
+  background-color: #BD9DEA;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.border {
+  background-color: #6622c6;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 0;
+}
+
+#CRALogo {
+  display: inline;
+  width: 70%;
+  margin-left: 15%;
+}
+
+#taxForm {
+  display: inline;
+  width: 10%;
+  margin-left: 45%;
+}
+
+#UoGLogo {
+  display: inline;
+  width: 10%;
+  margin-left: 45%;
+}
+
+#NotesSVG {
+  width: 10%;
+  margin-left: 45%;
+  margin-bottom: 0;
+  margin-top: 5%;
+  padding-bottom: 0;
 }
 
 /*Footer*/
