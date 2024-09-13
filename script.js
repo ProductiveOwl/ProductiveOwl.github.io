@@ -48,23 +48,26 @@ function chooseSkill() {
 
 /*Remove the current skill on the website and choose the next one to display */
 function removeSkill() {
-  if (index >= 0) {
+  if (index > 0) {
     var text = document.getElementById("skill").innerHTML;
-    text = text.slice(0, -1); // Remove one character
-    document.getElementById("skill").innerHTML = text;
+    text = text.slice(0, -2); // Remove one character
+    document.getElementById("skill").innerHTML = text + "|";
     index--;
     setTimeout(removeSkill, skillSpeed);
   }
   else {
     chooseSkill();
-    setTimeout(skillWriter, 1000);
+    skillWriter();
   }
 }
 
 /*Write the skill to the screen */
 function skillWriter() {
   if (index < skill.length) {
-    document.getElementById("skill").innerHTML += skill.charAt(index);
+    var text = document.getElementById("skill").innerHTML;
+    text = text.slice(0, -1); // Remove one character
+    text += skill.charAt(index);
+    document.getElementById("skill").innerHTML = text + "|";
     index++;
     setTimeout(skillWriter, skillSpeed);
   } else {
