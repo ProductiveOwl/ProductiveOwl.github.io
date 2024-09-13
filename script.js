@@ -21,39 +21,53 @@ function typeWriter() {
   }
 }
 
-/*var j = 0;
-var allSkills = ["HTML", "CSS", "JavaScript", "Java"];
-var skillSpeed = 100;
-var skill = null;
+var index = 0;
+var allSkills = ["HTML", "CSS", "JavaScript", "Python", "Java", "C", "SQL"];
+var skillSpeed = 150;
+var skill = "";
+var skillIndex = 0;
 
+function displaySkill() {
+  skill = allSkills[0];
+  skillWriter();
+  //setInterval(skillWriter, 2000);
+  //setInterval(removeSkill, 8000);
+  //setInterval(skillWriter, 8000);
+}
+
+/*Loop through all the skills */
 function chooseSkill() {
-  skill = allSkills[(Math.floor(Math.random() * allSkills.length))];
-  console.log("Skill is " + skill);
-  j = 0; // Reset j for the new skill
-  skillWriter(removeSkill); // Start writing the new skill
-}
-
-function removeSkill(chooseSkill) {
-  while (j >= 0) {
-    var text = document.getElementById("skill").innerHTML;
-    text = text.substring(0, text.length - 1); // Remove one character
-    document.getElementById("skill").innerHTML = text;
-    j--;
+  //skill = allSkills[(Math.floor(Math.random() * allSkills.length))];
+  if (skillIndex == (allSkills.length -1)) {
+    skillIndex = 0;
+  } else {
+    skillIndex++;
   }
-  setTimeout(chooseSkill, 1000); // Start a new skill after removing the old one
+  skill = allSkills[skillIndex]
 }
 
-function skillWriter(removeSkill) {
-  if (j < skill.length) {
-    document.getElementById("skill").innerHTML += skill.charAt(j);
-    j++;
+/*Remove the current skill on the website and choose the next one to display */
+function removeSkill() {
+  if (index >= 0) {
+    var text = document.getElementById("skill").innerHTML;
+    text = text.slice(0, -1); // Remove one character
+    document.getElementById("skill").innerHTML = text;
+    index--;
+    setTimeout(removeSkill, skillSpeed);
+  }
+  else {
+    chooseSkill();
+    setTimeout(skillWriter, 1000);
+  }
+}
+
+/*Write the skill to the screen */
+function skillWriter() {
+  if (index < skill.length) {
+    document.getElementById("skill").innerHTML += skill.charAt(index);
+    index++;
     setTimeout(skillWriter, skillSpeed);
   } else {
-    removeSkill(chooseSkill());
+    setTimeout(removeSkill, 4000);
   }
-}*/
-
-function highlightText() {
-  const title = document.querySelectorAll("h1")[0];
-  title.style.backgroundColor = "green";
 }

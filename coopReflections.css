@@ -245,19 +245,13 @@ blockquote {
   margin-top: 0;
 }
 
-#CRALogo {
+#CanadaFlag {
   display: inline;
-  width: 70%;
-  margin-left: 15%;
+  width: 40%;
+  margin-left: 30%;
 }
 
 #taxForm {
-  display: inline;
-  width: 10%;
-  margin-left: 45%;
-}
-
-#UoGLogo {
   display: inline;
   width: 10%;
   margin-left: 45%;
