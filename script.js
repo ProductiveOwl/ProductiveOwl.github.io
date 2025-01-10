@@ -9,17 +9,20 @@ function toggleResponsive() {
 }
 
 /*https://www.w3schools.com/HOWTO/howto_js_typewriter.asp*/
-var i = 0;
-var txt = 'Hi! I\'m Madhurika'; /* The text */
-var speed = 100; /* The speed/duration of the effect in milliseconds */
 
-function typeWriter() {
+
+
+//var i = 0;
+//var txt = 'Hi! I\'m Madhurika'; /* The text */
+//var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+/*function typeWriter() {
   if (i < txt.length) {
     document.getElementById("typingEffect").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
-}
+}*/
 
 var index = 0;
 var allSkills = ["HTML", "CSS", "JavaScript", "Python", "Java", "C", "SQL"];

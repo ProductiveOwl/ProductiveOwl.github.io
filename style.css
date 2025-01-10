@@ -114,7 +114,7 @@ li a:hover {
 }
 
 .mainMenu {
-  background-color: rgb(48, 11, 73);
+  background-color: rgb(48, 11, 73); /*#300b49*/
   width: 100%;
   display: inline-block;
 }
@@ -173,6 +173,11 @@ hr {
   min-height: 100vh;
   /*To make footer stick to the bottom*/
   flex-grow: 1;
+}
+
+dotlottie-wc {
+  width: 100%;
+  /*border: 2px solid white;*/
 }
 
 .gitIcon {
