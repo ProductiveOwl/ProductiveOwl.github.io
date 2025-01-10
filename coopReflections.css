@@ -232,6 +232,10 @@ h4 {
   text-decoration: underline;
 }
 
+.goalTitle {
+  text-decoration: none;
+}
+
 blockquote {
   background-color: #BD9DEA;
   border-radius: 20px;
@@ -245,6 +249,28 @@ blockquote {
   margin-top: 0;
 }
 
+#softwareAni {
+  display: flex;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  margin-left: 30%;
+}
+
+#terminal {
+  display: inline;
+  width: 15%;
+  margin-left: 45%;
+}
+
+#workID {
+  width: 15%;
+  margin-left: 45%;
+  margin-bottom: 0;
+  margin-top: 5%;
+  padding-bottom: 0;
+}
+
 #CanadaFlag {
   display: inline;
   width: 40%;
@@ -253,12 +279,12 @@ blockquote {
 
 #taxForm {
   display: inline;
-  width: 10%;
+  width: 15%;
   margin-left: 45%;
 }
 
 #NotesSVG {
-  width: 10%;
+  width: 15%;
   margin-left: 45%;
   margin-bottom: 0;
   margin-top: 5%;
