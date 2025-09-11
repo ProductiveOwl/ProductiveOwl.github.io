@@ -83,7 +83,8 @@ li a:hover {
   color: white;
 }
 
-.menuLink, #titleLink {
+.menuLink,
+#titleLink {
   display: block;
   background-color: rgb(48, 11, 73);
   text-decoration: none;
@@ -120,7 +121,7 @@ li a:hover {
 
 /*Header*/
 h1 {
-  display:inline-block;
+  display: inline-block;
   padding: 5px;
 }
 
@@ -156,7 +157,8 @@ h1 {
 /*Body*/
 body {
   background-color: #D1CFE2;
-  margin: 0; /*Gets rid of a bit on the side*/
+  margin: 0;
+  /*Gets rid of a bit on the side*/
 }
 
 .main {
@@ -213,13 +215,15 @@ article h3 {
 /* Creating the border animation */
 @keyframes borderAnimation {
   0% {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
+
   50% {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
   }
+
   100% {
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -247,6 +251,18 @@ blockquote {
   border-radius: 20px;
   padding: 10px;
   margin-top: 0;
+}
+
+#Poster {
+  display: inline;
+  width: 50%;
+  margin-left: 25%;
+}
+
+#CCMPSLogo {
+  display: inline;
+  width: 25%;
+  margin-left: 35%;
 }
 
 #softwareAni {
