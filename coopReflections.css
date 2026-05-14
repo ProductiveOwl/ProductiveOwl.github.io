@@ -253,6 +253,18 @@ blockquote {
   margin-top: 0;
 }
 
+#MantechLogo {
+  display: inline;
+  width: 25%;
+  margin-left: 35%;
+}
+
+#MantechProScreen {
+  display: inline;
+  width: 50%;
+  margin-left: 25%;
+}
+
 #Poster {
   display: inline;
   width: 50%;
