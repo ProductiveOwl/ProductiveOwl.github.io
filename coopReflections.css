@@ -253,6 +253,14 @@ blockquote {
   margin-top: 0;
 }
 
+#testTubes {
+  width: 15%;
+  margin-left: 45%;
+  margin-bottom: 0;
+  margin-top: 5%;
+  padding-bottom: 0;
+}
+
 #MantechLogo {
   display: inline;
   width: 25%;
